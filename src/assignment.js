@@ -16,17 +16,16 @@ const assignment = {};
  */
 
 function sumOfNumbersTo(destination) {
-    
     let sum = 0;
 
-    for (const number of numbers) {
-        sum += number
+    for (let i = 1; i <= destination; i++) {
+        sum += i
     }
-    return sum
+    return sum;
 
 }
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const destination = 15;
 assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 
