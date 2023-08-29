@@ -14,13 +14,20 @@ const assignment = {};
  * @param {Number} destination is the stopping number
  * @returns number the sum of the numbers from 1 to destination
  */
+
 function sumOfNumbersTo(destination) {
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     let sum = 0;
+
+    for (const number of numbers) {
+        sum += number
+    }
     return sum
+
 }
+assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 
-// assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -69,10 +76,12 @@ function countEvenNumbersWithin(destination) {
 function celsiusToFahrenheit(arrayOfNumbers) {
     let result = [];
 
+    result = arrayOfNumbers.map((element) => Math.trunc(element * 1.8 + 32));
     return result;
 }
 
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+const celsicius = [35, 15, 40, 60, 85, 42, 55]
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
