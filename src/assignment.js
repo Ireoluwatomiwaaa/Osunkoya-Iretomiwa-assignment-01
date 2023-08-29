@@ -80,6 +80,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     return result;
 }
 
+
 const celsicius = [35, 15, 40, 60, 85, 42, 55]
 assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
